@@ -1,7 +1,7 @@
 ---
 title: Exporting k8s pvc labels to csv
 slug: exporting-k8s-pvc-labels
-date: 22 Jul, 2024
+date: 22 Jul, 24
 ---
 
 NodeJs code to map all persistent disks with its labels to a csv file. The below code group all the persistent disks with the same label `run`.
