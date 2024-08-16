@@ -1,7 +1,7 @@
 ---
 title: Linux Users Groups
 slug: linux-users-groups
-date: 16 Aug, 2024
+date: 16 Aug, 24
 ---
 
 ## Users and Groups
