@@ -1,7 +1,7 @@
 ---
 title: Docker CLI Commands
 slug: docker-cli-commands
-date: 04 Aug, 24
+date: 23 Aug, 24
 ---
 
 ## List container id of all containers
@@ -57,4 +57,9 @@ docker container prune
 ## Disk usage of containers
 ```sh
 docker ps --size # docker ps -s
+```
+
+## Docker container ID by image id or name
+```sh
+docker ps -aqf "ancestor=<image-name-with-tag or image-id>"
 ```
