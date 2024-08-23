@@ -1,0 +1,1 @@
+import{ɵ as a,a as r,b as s,c as p,d as c}from"./index-BSCRzJ7c.js";let d=(()=>{var e;class o{}return e=o,e.ɵfac=function(t){return new(t||e)},e.ɵcmp=a({type:e,selectors:[["app-projects"]],standalone:!0,features:[r],decls:2,vars:0,template:function(t,m){t&1&&(s(0,"p"),p(1,"projects works!"),c())}}),o})();export{d as default};
