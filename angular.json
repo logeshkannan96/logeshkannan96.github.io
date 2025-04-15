@@ -36,6 +36,7 @@
           "builder": "@analogjs/platform:vite-dev-server",
           "defaultConfiguration": "development",
           "options": {
+            "host": "0.0.0.0",
             "buildTarget": "portfolio:build",
             "port": 5173,
             "assets": [

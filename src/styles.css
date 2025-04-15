@@ -79,6 +79,12 @@ a.page-link:visited {
   color: purple;
 }
 
+.resume {
+  iframe {
+    margin-top: 10px;
+  }
+}
+
 article {
   h1 {
     @apply my-4 text-center;
@@ -144,6 +150,10 @@ article {
         }
       }
     }
+
+    a {
+      @apply text-blue-600 hover:text-blue-800 underline font-normal transition-all duration-200;
+    } 
 
     p {
       @apply my-2;

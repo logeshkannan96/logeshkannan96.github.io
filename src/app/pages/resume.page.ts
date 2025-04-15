@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   template: `
     <div class="resume">
       <p class="text-base font-medium">Resume</p>
-      <p class="py-2 text-zinc-500">My resume will go here.</p>
+      <iframe src="https://drive.google.com/file/d/13LgPJU1JoAS0uDuadG26ZDC3TMI3UjFh/preview" width="720" height="1080" allow="autoplay"></iframe>
     </div>
   `
 })
