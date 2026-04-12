@@ -14,6 +14,6 @@ export default class HomeComponent {
   title = title;
 
   constructor() {
-    this.title.update(() => 'Hey, I am Loki');
+    this.title.update(() => 'Logesh | Lead Engineer');
   }
 }
