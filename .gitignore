@@ -4,6 +4,9 @@
 /dist
 /tmp
 /out-tsc
+/_apps/
+/public/still/
+/public/projects/preview/still/
 /bazel-out
 
 # Node

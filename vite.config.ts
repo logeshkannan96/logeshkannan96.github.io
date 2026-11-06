@@ -43,6 +43,7 @@ export default defineConfig(({ mode }) => ({
           '/',
           '/resume',
           '/projects',
+          '/projects/still',
           '/learnings',
           {
             contentDir: 'src/content/learnings',
@@ -59,7 +60,7 @@ export default defineConfig(({ mode }) => ({
           },
         ],
         sitemap: {
-          host: 'https://logeshkannan96.github.io',
+          host: 'https://logesh.space',
         },
       },
     }),

@@ -11,8 +11,8 @@ import { LinkArrowComponent } from "../link-arrow/link-arrow.component";
 export class NavbarComponent {
   navItems = [
     { name: 'Home', link: '' },
-    // { name: 'Projects', link: 'projects' },
-    { name: '✨ Learnings', link: 'learnings' },
+    { name: 'Learnings', link: 'learnings' },
+    { name: '✨ Projects', link: 'projects' },
     { name: 'Resume', link: 'resume', external: true },
   ];
 }

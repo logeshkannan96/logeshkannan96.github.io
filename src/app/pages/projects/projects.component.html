@@ -1,1 +1,21 @@
-<p>projects works!</p>
+<main class="projects-page">
+  <header class="projects-intro">
+    <h1 class="text-base font-medium">Projects</h1>
+    <p class="py-2 text-zinc-600">Tools I build, the ideas behind them, and what I learn along the way.</p>
+  </header>
+  <section aria-label="Selected projects">
+    <article class="project-row">
+      <div class="project-summary">
+        <p class="project-meta">2026 <span aria-hidden="true">/</span> Browser tool</p>
+        <h2><a routerLink="/projects/still">Still</a></h2>
+        <p class="project-tagline">Borrow the color. Keep the moment.</p>
+        <p class="project-description">Transfer the mood of a reference image to your own photograph. Adjust the strength, compare the result, and export a new image. Everything happens in your browser.</p>
+        <ul class="project-tags" aria-label="Technologies"><li>TypeScript</li><li>WebAssembly</li><li>Web Workers</li></ul>
+        <a class="project-link" routerLink="/projects/still">View project <app-link-arrow></app-link-arrow></a>
+      </div>
+      <a class="project-cover" routerLink="/projects/still" aria-label="View Still project details">
+        <img src="/projects/still-preview.png" alt="Still color transfer studio showing an illustrated landscape before and after a warm color grade" width="1440" height="1074" />
+      </a>
+    </article>
+  </section>
+</main>

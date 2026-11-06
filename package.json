@@ -7,12 +7,13 @@
     "node": ">=18.13.0"
   },
   "scripts": {
-    "dev": "ng serve",
+    "dev": "vite",
     "ng": "ng",
     "start": "npm run dev",
-    "build": "ng build",
+    "build": "vite build --outDir dist/client",
     "watch": "ng build --watch",
-    "test": "ng test"
+    "test": "ng test",
+    "test:site": "node --test tests/site.test.mjs"
   },
   "dependencies": {
     "@analogjs/content": "^1.6.1",
