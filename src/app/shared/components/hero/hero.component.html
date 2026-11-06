@@ -2,15 +2,15 @@
     <div class="w-[70%]">
         <h1 class="greetings text-4xl font-medium text-zinc-800">Helló, I'm {{heroData.name}}👋</h1>
         <div>
-            <h4 class="text-xl pt-5 font-normal text-zinc-500">{{heroData.shortDescription}}</h4>
-            <h4 class="text-base font-normal text-zinc-500">{{heroData.age}}, {{heroData.gender}}</h4>
+            <p class="text-xl pt-5 font-normal text-zinc-600">{{heroData.shortDescription}}</p>
+            <p class="text-base font-normal text-zinc-600">{{heroData.age}}, {{heroData.gender}}</p>
         </div>
-        <div class="text-sm font-normal text-zinc-500 pt-5 leading-6">
+        <div class="text-sm font-normal text-zinc-600 pt-5 leading-6">
             <div [innerHTML]="heroData.about"></div>
         </div>
     </div>
     <div class="w-[30%] relative">
-        <img class="rounded-full brightness-110" src="{{heroData.avatar}}" alt="avatar" />
+        <img class="rounded-full brightness-110" [src]="heroData.avatar" width="460" height="460" fetchpriority="high" [alt]="heroData.name" />
         <div class="absolute flex justify-center items-center rounded-full overflow-hidden user-status">
             <p class="text-lg drop-shadow-lg">🖥️</p>
         </div>

@@ -1,7 +1,7 @@
 <div class="resume-section font-medium text-zinc-900 mb-5">Contact.</div>
 @for (item of contacts; track $index) {
     <div class="link-wrapper flex gap-1 items-center text-base font-normal !text-zinc-900 mb-5 gap-3">{{item.site}}
-        <a class="link items-center justify-start !text-sm !font-normal !text-zinc-500" href={{item.link}}>
+        <a class="link items-center justify-start !text-sm !font-normal !text-zinc-600" href={{item.link}}>
             <span>&#64;{{item.name}}</span>
             <app-link-arrow></app-link-arrow>
         </a>

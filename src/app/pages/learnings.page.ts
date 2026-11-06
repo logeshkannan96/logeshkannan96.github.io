@@ -10,7 +10,7 @@ import { title } from '../signals';
   imports: [RouterLink],
   template: `
   <p class="text-base font-medium">Things I Learned</p>
-  <p class="py-2 text-zinc-500">Personal tech notebook: Short notes and learnings</p>
+  <p class="py-2 text-zinc-600">Personal tech notebook: Short notes and learnings</p>
   <div class="py-4">
     @for (post of posts;track post.attributes.slug) {
       <div class="flex flex-row items-center gap-8 pt-4">
