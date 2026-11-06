@@ -17,7 +17,6 @@
             "outputPath": "dist/client",
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
               "src/assets"
             ]
           },
@@ -40,7 +39,6 @@
             "buildTarget": "portfolio:build",
             "port": 5173,
             "assets": [
-              "src/favicon.ico",
               "src/assets"
             ]
           },
