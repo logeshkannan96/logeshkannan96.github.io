@@ -4,12 +4,47 @@ on:
   push:
     branches:
       - 'main'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: portfolio-deployment
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Check out Still
+        uses: actions/checkout@v4
+        with:
+          repository: logeshkannan96/still
+          ref: 2d35f443f8487b8a6bff57974745c456080414aa
+          path: _apps/still
+          ssh-key: ${{ secrets.STILL_DEPLOY_KEY }}
+          persist-credentials: false
+      - name: Set up Node for Still
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+      - name: Build and test Still
+        working-directory: _apps/still
+        run: |
+          npm ci
+          npm test
+          npm run build -- --base=/still/
+      - name: Include Still in portfolio assets
+        run: |
+          test -f _apps/still/dist/index.html
+          mkdir -p public/still
+          cp -R _apps/still/dist/. public/still/
+          rm -rf _apps/still
+      # Preserve the portfolio's existing Node version and deployment process.
       - uses: actions/setup-node@v4
         with:
           node-version: '20.x'

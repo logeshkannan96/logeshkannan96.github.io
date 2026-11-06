@@ -10,7 +10,7 @@
     "dev": "ng serve",
     "ng": "ng",
     "start": "npm run dev",
-    "build": "ng build",
+    "build": "vite build --outDir dist/client",
     "watch": "ng build --watch",
     "test": "ng test"
   },
