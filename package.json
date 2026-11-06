@@ -7,7 +7,7 @@
     "node": ">=18.13.0"
   },
   "scripts": {
-    "dev": "ng serve",
+    "dev": "vite",
     "ng": "ng",
     "start": "npm run dev",
     "build": "vite build --outDir dist/client",
