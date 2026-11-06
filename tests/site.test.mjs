@@ -14,6 +14,8 @@ test('Projects is rendered with Still and a details link', () => {
   assert.match(html, /<h1[^>]*>\s*Projects\s*<\/h1>/);
   assert.match(html, /href="\/projects\/still"/);
   assert.match(html, /Still/);
+  assert.match(html, /href="https:\/\/github\.com\/logeshkannan96\/clonebox"/);
+  assert.ok(existsSync(resolve(root, 'projects/clonebox-preview.png')));
 });
 test('Still details render at a direct URL with a full-page launch link', () => {
   const html = read('projects/still/index.html');
