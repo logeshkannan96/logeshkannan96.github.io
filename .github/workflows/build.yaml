@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: logeshkannan96/still
-          ref: d4addc410e72b1d0b1f3a45d1c698335afb0d7aa
+          ref: 04b48faec29f2454ce842765987dfccde1d0f484
           path: _apps/still
           ssh-key: ${{ secrets.STILL_DEPLOY_KEY }}
           persist-credentials: false
