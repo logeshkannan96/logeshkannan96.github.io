@@ -1,7 +1,7 @@
 <ul class="flex items-center justify-end navbar">
     @for (item of navItems; track $index) {
         <li class="relative">
-            <a [routerLink]="item.link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-item">{{ item.name }}</a>
+            <a [routerLink]="'/' + item.link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: item.link !== 'projects' }" [attr.aria-label]="item.name" ariaCurrentWhenActive="page" class="nav-item">{{ item.name }}</a>
         </li>
     }
 </ul>

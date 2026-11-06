@@ -1,0 +1,29 @@
+<main class="projects-page">
+  <a class="project-link back-link" routerLink="/projects">← All projects</a>
+  <header class="detail-heading">
+    <p class="project-meta">2026 <span aria-hidden="true">/</span> Browser tool</p>
+    <h1 class="greetings">Still</h1>
+    <p class="project-tagline">Borrow the color. Keep the moment.</p>
+    <p class="project-description">A small color-grading studio that brings the palette of a reference image to your own photograph, without changing what is in the frame.</p>
+    <div class="detail-actions">
+      <a class="launch-link" href="/projects/preview/still/">Try Still <app-link-arrow></app-link-arrow></a>
+      <span>No account. Your images stay on your device.</span>
+    </div>
+  </header>
+  <figure class="project-figure">
+    <div class="project-cover"><img src="/projects/still-preview.png" alt="Still studio with a warm reference, a cool source image, and a split comparison of the resulting grade" width="1440" height="1074" /></div>
+    <figcaption>The working studio, using illustrated sample images to compare the original and transferred colors.</figcaption>
+  </figure>
+  <dl class="project-facts">
+    <div><dt>Platform</dt><dd>Web browser</dd></div>
+    <div><dt>Built with</dt><dd>TypeScript, AssemblyScript, WebAssembly</dd></div>
+    <div><dt>Status</dt><dd>Working prototype</dd></div>
+  </dl>
+  <div class="project-story">
+    <section><h2>Start with a feeling</h2><p>A photograph can have the right composition but a different mood from the one you have in mind. Still starts with a reference: an image whose colors you like. It uses that palette to give your photograph a different atmosphere while keeping its content intact.</p></section>
+    <section><h2>A short path from reference to result</h2><ol><li>Choose a reference image and the photograph you want to grade.</li><li>Adjust the transfer strength, or keep the original brightness.</li><li>Move the comparison slider to see the difference, then export a PNG at your photograph’s original dimensions.</li></ol></section>
+    <section><h2>Built to stay in the browser</h2><p>Still uses Reinhard color transfer in the Lab color space, compiled to WebAssembly. A Web Worker runs the processing away from the interface, while smaller previews keep adjustments responsive. There is no AI model or image-processing backend, and no upload step.</p></section>
+    <section><h2>Where it works, and where it stops</h2><p>This is global color matching. It does not recognise faces, skies, or individual objects, so a strong transfer can shift skin tones or clip vivid colors. Lowering the strength can help. The prototype accepts PNG, JPEG, and WebP images up to 8 megapixels and 25 MB; it is not a RAW or HDR editor.</p></section>
+  </div>
+  <footer class="project-end"><a class="project-link" routerLink="/projects">← All projects</a><a class="project-link" href="/projects/preview/still/">Open Still <app-link-arrow></app-link-arrow></a></footer>
+</main>

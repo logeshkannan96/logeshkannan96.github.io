@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: logeshkannan96/still
-          ref: 2d35f443f8487b8a6bff57974745c456080414aa
+          ref: d4addc410e72b1d0b1f3a45d1c698335afb0d7aa
           path: _apps/still
           ssh-key: ${{ secrets.STILL_DEPLOY_KEY }}
           persist-credentials: false
@@ -37,12 +37,12 @@ jobs:
         run: |
           npm ci
           npm test
-          npm run build -- --base=/still/
+          npm run build -- --base=/projects/preview/still/
       - name: Include Still in portfolio assets
         run: |
           test -f _apps/still/dist/index.html
-          mkdir -p public/still
-          cp -R _apps/still/dist/. public/still/
+          mkdir -p public/projects/preview/still
+          cp -R _apps/still/dist/. public/projects/preview/still/
           rm -rf _apps/still
       # Preserve the portfolio's existing build runtime.
       - uses: actions/setup-node@v4
@@ -53,7 +53,7 @@ jobs:
           npm ci --legacy-peer-deps
           npm run build
           test -f dist/analog/public/index.html
-          test -f dist/analog/public/still/index.html
+          npm run test:site
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:

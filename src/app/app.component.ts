@@ -10,7 +10,7 @@ import { title } from './signals';
   template: `
     <title>{{ title() }}</title>
     <div class="my-12">
-      <div class="w-[56rem] mx-auto">
+      <div class="w-full max-w-[56rem] px-5 sm:px-6 lg:px-0 mx-auto">
           <app-navbar></app-navbar>
           <div class="my-10">
               <router-outlet></router-outlet>
